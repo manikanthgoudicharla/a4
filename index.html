@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <div id="logo"><img src="./images/profile.jpg" alt="profile"></div>
+        <div id="navlist">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About-us</a></li>
+                <li>Projects &#9662;
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="./no.html">Web Development</a></li>
+                            <li><a href="./no.html">Mobile Apps</a></li>
+                            <li><a href="./no.html">Machine Learning</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="./contact.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div id="searchbar">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div id="burger">
+            <p>Menu</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="slider">
+                <div class="slider-images" id="sliderImages">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/1200x360/ff7f7f/333333?text=Slide+1" alt="Slide 1">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/1200x360/77dd77/333333?text=Slide+2" alt="Slide 2">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/1200x360/779ecb/333333?text=Slide+3" alt="Slide 3">
+                    </div>
+                </div>
+                <!-- Dots for navigation -->
+                <div class="dots">
+                    <div class="dot active-dot" onclick="currentSlide(0)"></div>
+                    <div class="dot" onclick="currentSlide(1)"></div>
+                    <div class="dot" onclick="currentSlide(2)"></div>
+                </div>
+            </div>
+
+            <div id="intro">
+                <h1>Hi, I'm Manikanth Goudicharla, A Full-Stack Developer</h1>
+                <div id="introc">
+                    <img src="./images/profile.jpg" alt="profile">
+                    <h3>I’m a passionate full-stack developer 💻 with expertise in React ⚛️, Node.js 🌐, Express 🚀, PHP 🐘, HTML 📝, CSS 🎨, and SQL 🗄️. I specialize in building modern, responsive web applications 📱💻 that are both visually appealing and highly functional. Whether working on the front-end 🎯 or back-end 🔧, I thrive on creating seamless user experiences with clean and efficient code.</h3>
+                </div>
+                <div id="introb">
+                    <button>View My Work</button>
+                    <button>Contact-me</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Me</h2>
+                <p>I'm a passionate full-stack developer with expertise in React, Node.js, Express, PHP, HTML, CSS, and SQL. I create modern, responsive, and efficient web applications.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> email@example.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> City, Country</li>
+                </ul>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509956!2d144.95373631590455!3d-37.81627997975148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f14c0d7%3A0x5045675218ceed30!2sYour%20Location!5e0!3m2!1sen!2sau!4v1649001305425!5m2!1sen!2sau"
+                width="96%"
+                height="300"
+                style="border:0; margin:10px 2%; "
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Manikanth Goudicharla. All rights reserved.
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

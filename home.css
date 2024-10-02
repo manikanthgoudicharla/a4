@@ -1,0 +1,149 @@
+main{
+    width:96%;
+    margin: 5px 2%;
+  
+}
+section{
+    width:100%;
+}
+#slider{
+    width:100%;
+    height:360px;
+    background-color: #22559c;
+    border-radius: 10px;
+}
+#intro{
+    width:100%;
+    height:600px;
+    background-color: #22559c;
+    border-radius: 10px;
+   margin-top: 10px;
+   padding-top: 40px;
+   color:#fff;
+}
+#intro h1{
+    text-align: center;
+    font-size: 30px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+#intro h1:hover{
+    color:yellow;
+}
+#introc{
+    width:100%;
+    height:400px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#introc img{
+   width:20%;
+   height:auto;
+   border-radius: 10px;
+   border:2px solid #fff;
+   transition-property: all;
+   transition-duration: 0.5s;
+}
+#introc img:hover{
+   border: 2px solid yellow;
+}
+#introc h3{
+    width:60%;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+#intro h3:hover{
+    color:yellow;
+}
+#introb{
+    width:100%;
+    height:100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#introb button{
+    width:40%;
+    height:60px;
+    border-radius: 40px;
+    border:2px Solid #fff;
+    transition-property: all;
+    transition-duration: 0.5s;
+    color:#22559c;
+    font-size: large;
+}
+#intro button:hover{
+    background-color:yellow;
+}
+@media (max-width:750px){
+    #intro h1{
+        font-size: 20px;
+    }
+    #introc{
+        flex-direction: column;
+    }
+    #introc img{
+        width:40%;
+    }
+    #introc h3{
+        padding-top: 20px;
+        width:90%;
+        font-size: 15px;
+    }
+
+}
+  /* Slider Container */
+  #slider {
+    width: 100%;
+    height: 360px;
+    background-color: #22559c;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slider Images Container */
+.slider-images {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Slide */
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling the images inside the slider */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dots for slide indication */
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #fff;
+}
